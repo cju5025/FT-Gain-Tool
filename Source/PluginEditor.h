@@ -1,26 +1,14 @@
-/*
-  ==============================================================================
-
-    This file contains the basic framework code for a JUCE plugin editor.
-
-  ==============================================================================
-*/
-
 #pragma once
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 
-//==============================================================================
-/**
-*/
 class GainToolAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
     GainToolAudioProcessorEditor (GainToolAudioProcessor&);
     ~GainToolAudioProcessorEditor() override;
 
-    //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
 
