@@ -46,7 +46,7 @@
 namespace ProjectInfo
 {
     const char* const  projectName    = "GainTool";
-    const char* const  companyName    = "";
+    const char* const  companyName    = "Family Time";
     const char* const  versionString  = "1.0.0";
     const int          versionNumber  = 0x10000;
 }

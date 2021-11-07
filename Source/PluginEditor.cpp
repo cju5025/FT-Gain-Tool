@@ -4,11 +4,11 @@
 GainToolAudioProcessorEditor::GainToolAudioProcessorEditor (GainToolAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    setSize (400, 300);
+    setSize (150, 300);
     
     addAndMakeVisible(mDial);
     mDial.setSliderStyle(Slider::SliderStyle::RotaryHorizontalVerticalDrag);
-    mDial.setTextBoxStyle(Slider::TextBoxBelow, false, 0, 0);
+    mDial.setTextBoxStyle(Slider::TextBoxBelow, false, 50, 20);
     mDial.setLookAndFeel(&mGTDial);
 }
 
@@ -25,5 +25,5 @@ void GainToolAudioProcessorEditor::paint (juce::Graphics& g)
 
 void GainToolAudioProcessorEditor::resized()
 {
-    mDial.setBounds(getLocalBounds());
+    mDial.setBounds(getWidth() / 2 - 50, getHeight() / 2, 100, 100);
 }
