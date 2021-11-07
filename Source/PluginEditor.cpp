@@ -8,7 +8,7 @@ GainToolAudioProcessorEditor::GainToolAudioProcessorEditor (GainToolAudioProcess
     
     addAndMakeVisible(mDial);
     mDial.setSliderStyle(Slider::SliderStyle::RotaryHorizontalVerticalDrag);
-    mDial.setTextBoxStyle(Slider::TextBoxBelow, false, 50, 20);
+    mDial.setTextBoxStyle(Slider::TextBoxBelow, false, 0, 0);
     mDial.setLookAndFeel(&mGTDial);
 }
 
@@ -18,8 +18,8 @@ GainToolAudioProcessorEditor::~GainToolAudioProcessorEditor()
 
 void GainToolAudioProcessorEditor::paint (juce::Graphics& g)
 {
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-    g.setColour (juce::Colours::white);
+    g.fillAll (juce::Colours::whitesmoke);
+    g.setColour (juce::Colours::black);
     g.setFont (15.0f);
 }
 
