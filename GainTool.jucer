@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="Os1MOA" name="GainTool" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1">
   <MAINGROUP id="z60ODw" name="GainTool">
     <GROUP id="{FC19D968-D96F-12E5-C332-06CE2B107615}" name="Source">
+      <GROUP id="{66A434A5-C312-62C3-5A48-127D43CED6EF}" name="GUI">
+        <FILE id="GVigbc" name="GTDial.cpp" compile="1" resource="0" file="Source/GTDial.cpp"/>
+        <FILE id="YHcCmQ" name="GTDial.h" compile="0" resource="0" file="Source/GTDial.h"/>
+      </GROUP>
       <FILE id="ccim1P" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="zRiNQN" name="PluginProcessor.h" compile="0" resource="0"
