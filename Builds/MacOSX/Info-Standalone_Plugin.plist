@@ -8,7 +8,7 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.GainTool</string>
+    <string>com.FamilyTime.GainTool</string>
     <key>CFBundleName</key>
     <string>GainTool</string>
     <key>CFBundleDisplayName</key>
