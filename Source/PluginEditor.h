@@ -2,6 +2,7 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "GTDial.h"
 
 class GainToolAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
@@ -13,8 +14,10 @@ public:
     void resized() override;
 
 private:
-    // This reference is provided as a quick way for your editor to
-    // access the processor object that created it.
+    
+    Slider mDial;
+    GTDial mGTDial;
+    
     GainToolAudioProcessor& audioProcessor;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (GainToolAudioProcessorEditor)
